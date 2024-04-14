@@ -84,6 +84,10 @@ This is the place for you to write reflections:
 3. Dalam konteks keamanan multithreading Rust, DashMap merupakan pilihan yang tepat karena telah dioptimalkan untuk digunakan dalam lingkungan multithreaded. Penggunaan DashMap memastikan bahwa operasi pada map SUBSCRIBERS dapat dilakukan secara aman dan efisien oleh banyak thread. Meskipun Singleton pattern dapat memastikan hanya ada satu instance dari objek yang dibuat, namun hal itu tidak menjamin thread safety seperti yang disediakan oleh DashMap dalam kasus ini. Dengan menggunakan DashMap, kita dapat memastikan bahwa daftar subscriber terhadap produk kita dikelola secara thread-safe dan efisien.
 
 #### Reflection Publisher-2
+1. Memisahkan Service dari Repository dalam desain Model-View-Controller (MVC) diperlukan untuk mematuhi prinsip single responsibility. Service bertanggung jawab untuk mengelola logika bisnis dan pengolahan data yang diperoleh dari Repository, sementara Repository berfungsi sebagai antarmuka untuk mengakses dan memanipulasi data dalam database. Dengan memisahkan kedua lapisan ini, kode menjadi lebih terstruktur, mudah dipahami, dan lebih mudah dalam pemeliharaan.
 
+2. Jika hanya menggunakan Model tanpa Service dan Repository, maka terjadi ketergantungan yang tinggi antar komponen, yang menyebabkan kesulitan dalam melakukan perubahan karena setiap perubahan pada Model akan berdampak pada seluruh kode. Hal ini meningkatkan kompleksitas dan menurunkan fleksibilitas dalam pengembangan dan pemeliharaan kode.
+
+3. Postman adalah alat yang sangat berguna untuk menguji dan memvalidasi fungsionalitas dari aplikasi yang dikembangkan. Dengan Postman, saya dapat mengirimkan permintaan HTTP ke berbagai endpoint dalam aplikasi, serta memeriksa respon yang diterima untuk memastikan kebenaran dan konsistensi data. Saya juga dapat menggunakan fitur CRUD untuk menguji operasi dasar seperti membuat, membaca, memperbarui, dan menghapus data. Kemampuan untuk menyesuaikan permintaan dan melihat respons secara langsung membantu saya dalam menguji dan memperbaiki aplikasi dengan cepat dan efisien.
 
 #### Reflection Publisher-3
